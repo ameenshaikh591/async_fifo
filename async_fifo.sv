@@ -157,15 +157,15 @@ module synchronizers (
 endmodule
 
 module async_fifo (
-    input  logic async_rst,
+    input logic async_rst,
 
-    input  logic wr_clk,
-    input  logic wr_en,
-    input  logic [`WIDTH-1:0] wr_data,
+    input logic wr_clk,
+    input logic wr_en,
+    input logic [`WIDTH-1:0] wr_data,
     output logic full,
 
-    input  logic rd_clk,
-    input  logic rd_en,
+    input logic rd_clk,
+    input logic rd_en,
     output logic empty,
     output logic [`WIDTH-1:0] rd_data,
     output logic rd_valid
